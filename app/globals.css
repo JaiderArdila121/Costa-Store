@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0B0B0C;
+  --color-surface: #16161A;
+  --color-amber: #F2C94C;
+  --color-amber-light: #FFE066;
+  --color-muted: #9B9B9B;
+
+  --font-display: "Archivo Black", sans-serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+@layer utilities {
+  .text-shimmer {
+    background: linear-gradient(
+      90deg,
+      #F2C94C 0%,
+      #FFE066 25%,
+      #F2C94C 50%,
+      #FFE066 75%,
+      #F2C94C 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 4s linear infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  @keyframes float-particle {
+    0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+    50% { transform: translateY(-30px) translateX(15px); opacity: 0.8; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-shimmer,
+  .particle {
+    animation: none !important;
+  }
+}
