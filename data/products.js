@@ -34,7 +34,7 @@ const products = [
     category: "Hogar",
     category: "Dama",
     price: "$60.000",
-    images: ["/productos/Colico1.png","/productos/Colico2.png","/productos/Colico3.png","/productos/Colico4.png","/productos/Colico5.png"],
+    images: ["/productos/Colico1.png","/productos/Colico2.jpg","/productos/Colico3.jpg","/productos/Colico4.png","/productos/Colico5.png"],
     description: "Luce los colores de la Selección Colombia con esta espectacular camiseta de dama 1.1, diseñada para los verdaderos aficionados que quieren apoyar a su selección con estilo y comodidad"
     
 
