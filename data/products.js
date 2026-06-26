@@ -14,7 +14,7 @@ const products = [
     category: "Ropa",
     category: "Hombre",
     price: "$80.000",
-    images: ["/productos/Camiseta_local26.avif","/productos/Camiseta_local26-2.avif","/productos/Camiseta_local26-3.avif"],
+    images: ["/productos/Camiseta_local26.avif","/productos/camiseta_local26-2.avif","/productos/camiseta_local26-3.avif"],
     description: "Luce los colores de la Selección Colombia con esta espectacular camiseta de hombre 1.1, diseñada para los verdaderos aficionados que quieren apoyar a su selección con estilo y comodidad",
   },
   {
