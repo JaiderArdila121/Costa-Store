@@ -15,6 +15,10 @@ export default function Particles({ count = 40 }) {
       "(prefers-reduced-motion: reduce)"
     ).matches;
 
+    const esMobil = window.innerWidth < 768;
+
+    if (prefersReducedMotion || esMobil) return;
+
     function createParticles(width, height) {
       particles = Array.from({ length: count }, () => ({
         x: Math.random() * width,
@@ -43,9 +47,7 @@ export default function Particles({ count = 40 }) {
           p.x = Math.random() * width;
         }
       });
-      if (!prefersReducedMotion) {
-        animationId = requestAnimationFrame(draw);
-      }
+      animationId = requestAnimationFrame(draw);
     }
 
     const observer = new ResizeObserver((entries) => {
