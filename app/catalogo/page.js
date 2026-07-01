@@ -1,5 +1,6 @@
 "use client";
 
+import PreguntarProducto from "@/components/PreguntarProducto";
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import products from "@/data/products";
@@ -85,6 +86,7 @@ function CatalogoContenido() {
             />
           ))}
         </div>
+        <PreguntarProducto />
       </div>
 
       {selectedProduct && (
